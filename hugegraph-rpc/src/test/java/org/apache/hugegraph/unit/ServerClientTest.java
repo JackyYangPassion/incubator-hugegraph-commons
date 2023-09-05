@@ -75,6 +75,8 @@ public class ServerClientTest extends BaseUnitTest {
     public void testSimpleService() {
         // Init server
         RpcProviderConfig serverConfig = rpcServer.config();
+
+        //将 ServiceImpl 注册到 RpcServer 中
         serverConfig.addService(HelloService.class, new HelloServiceImpl());
         startServer(rpcServer);
 

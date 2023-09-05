@@ -37,6 +37,10 @@ import org.slf4j.Logger;
 import org.apache.hugegraph.iterator.ExtendableIterator;
 import com.google.common.collect.ImmutableList;
 
+
+/**
+ * EventHub 在server中多处使用到，需要明确工程实现逻辑
+ */
 public class EventHub {
 
     private static final Logger LOG = Log.logger(EventHub.class);
