@@ -22,6 +22,11 @@ import java.util.function.Function;
 
 import org.apache.hugegraph.util.E;
 
+/**
+ * filetr 在计算框架编程中最重要
+ * @param <T>
+ * @param <R>
+ */
 public class FlatMapperFilterIterator<T, R> extends FlatMapperIterator<T, R> {
 
     private final Function<R, Boolean> filterCallback;

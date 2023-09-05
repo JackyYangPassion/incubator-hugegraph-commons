@@ -51,7 +51,7 @@ public class LimitIteratorTest extends BaseUnitTest {
         Iterator<Integer> results = new LimitIterator<>(values, filter);
 
         List<Integer> actual = new ArrayList<>();
-        while (results.hasNext()) {
+        while (results.hasNext()) {//限速迭代器的代码实现
             actual.add(results.next());
         }
 
